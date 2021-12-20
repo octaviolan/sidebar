@@ -10,7 +10,7 @@
   --grey-bg: #fbfbfb;
   --grey: #787878;
   --white: #ffffff;
-  --baseFontFamily: Manrope, Helvetica, sans-serif;
+  --baseFontFamily: 'Manrope';
   --baseFont: bold 1rem/1.5rem var(--baseFontFamily);
 }
 
