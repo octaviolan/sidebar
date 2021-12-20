@@ -1,0 +1,28 @@
+@import './fonts.css';
+@import './icons.css';
+@import './sidebar.css';
+
+
+:root {
+  font-size: 16px;
+  --black: #000000;
+  --primary: #0f56b3;
+  --grey-bg: #fbfbfb;
+  --grey: #787878;
+  --white: #ffffff;
+  --baseFontFamily: Manrope, Helvetica, sans-serif;
+  --baseFont: bold 1rem/1.5rem var(--baseFontFamily);
+}
+
+body {
+  color: var(--black);
+  background-color: var(--primary);
+  font: var(--baseFont);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+}
+
+

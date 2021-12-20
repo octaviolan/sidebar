@@ -1,0 +1,101 @@
+.sidebar {
+  background: var(--white);
+  inline-size: 15.5rem;
+  padding-inline-end: .5rem;
+  overflow: hidden;
+  transition: inline-size 300ms;
+}
+
+.sidebar.is-clicked {
+  inline-size: 4rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-inline-start: .5rem;
+  padding-block: .5rem;
+}
+
+.header .icon-menu {
+  cursor: pointer;
+}
+
+.header .image img {
+  vertical-align: middle;
+}
+
+.header span {
+  padding: .75rem .5rem;
+  letter-spacing: 5%;
+  white-space: nowrap;
+}
+
+.menu-list {
+  margin: 0;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.menuItem {
+  border-radius: 0 .75rem .75rem 0;
+}
+
+.menuItem.is-active {
+  background: #C5DCFA;
+}
+
+.menuItem.is-active span {
+  color: var(--primary);
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+  margin-inline-start: .5rem;
+  display: flex;
+}
+
+.link span {
+  padding-inline: .5rem;
+  padding-block: .75rem;
+  font: var(--baseFont);
+  color: var(--grey);
+  letter-spacing: 5%;
+}
+
+[class^='icon-'] {
+  font-size: 1.5rem;
+  color: var(--black);
+  padding: .75rem;
+}
+
+.menu h2 {
+  margin: 0;
+  margin-inline-start: .5rem;
+  text-transform: uppercase;
+  font-size: .625rem;
+  line-height: .9875rem;
+  padding: 1rem .75rem;
+  letter-spacing: 15%;
+}
+
+.header span,
+.header .image,
+.link span,
+.menu h2 {
+  opacity: 1;
+  transition: 300ms;!>
+}
+
+.header span.is-clicked,
+.header .image.is-clicked,
+.link span.is-clicked,
+.menu h2.is-clicked
+ {
+  opacity: 0;
+}
+
+.menu h2.is-clicked {
+  display: none;
+}
